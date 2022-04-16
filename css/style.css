@@ -19,6 +19,7 @@ body {
     --bright-orange: hsl(31, 77%, 52%);
     --dark-cyan: hsl(184, 100%, 22%);
     --very-dark-cyan: hsl(179, 100%, 13%);
+    font-size: 15px;
 }
 
 .container {
@@ -154,9 +155,11 @@ p {
 
 .content-wrapper {
     margin: auto;
+    width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (min-width: 360px) {
 
     .content-wrapper {
         width: 70%;
@@ -164,7 +167,39 @@ p {
 
 }
 
+@media screen and (min-width: 411px) {
+
+    .content-wrapper {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 540px) {
+
+    .content-wrapper {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .content-wrapper {
+        width: 72%;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
+
+    .content-wrapper {
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
 
     .content-wrapper {
         width: 60%;
@@ -206,10 +241,6 @@ p {
         border-radius: 0 10px 10px 0;
     }
 
-}
-
-.attribution {
-    margin-top: 2em;
 }
 
 
