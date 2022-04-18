@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://www.frontendmentor.io/solutions/3-column-preview-card-component-BJjgr1iEc)]
-- Live Site URL: [(https://abasiekong.github.io/3-column-preview-card-component/)]
+- Solution URL: https://www.frontendmentor.io/solutions/3-column-preview-card-component-BJjgr1iEc
+- Live Site URL: https://abasiekong.github.io/3-column-preview-card-component/
 
 ## My process
 
