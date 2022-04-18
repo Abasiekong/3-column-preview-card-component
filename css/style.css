@@ -99,33 +99,33 @@ p {
 
 /* section-sedans */
 
-.section-sedans [learn-more-btn] {
+.section-sedans .learn-more-btn {
     color: var(--bright-orange);
 }
 
-.section-sedans [learn-more-btn]:active {
+.section-sedans .learn-more-btn:active {
     color: hsl(0, 0%, 95%);    
     background-color: var(--bright-orange);
 }
 
 /* section-suvs */
 
-.section-suvs [learn-more-btn] {
+.section-suvs .learn-more-btn {
     color: var(--dark-cyan);
 }
 
-.section-suvs [learn-more-btn]:active {
+.section-suvs .learn-more-btn:active {
     color: hsl(0, 0%, 95%);    
     background-color: var(--dark-cyan);
 }
 
 /* section-luxury */
 
-.section-luxury [learn-more-btn] {
+.section-luxury .learn-more-btn {
     color: var(--very-dark-cyan);
 }
 
-.section-luxury [learn-more-btn]:active {
+.section-luxury .learn-more-btn:active {
     color: hsl(0, 0%, 95%);    
     background-color: var(--very-dark-cyan);
 }
