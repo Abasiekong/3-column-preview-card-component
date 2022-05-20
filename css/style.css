@@ -22,6 +22,12 @@ body {
     font-size: 15px;
 }
 
+main {
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
 .container {
     max-width: 330px;
     width: 90%;
@@ -34,7 +40,6 @@ body {
         width: 100%;
         max-width: 1140px;
         margin: auto;
-        transform: translateY(15%);
     }
     
 }
