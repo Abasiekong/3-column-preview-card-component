@@ -1,0 +1,185 @@
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+%section-padding {
+    padding: 4.5rem 2.5rem;    
+}
+
+@mixin btn-text($col) {
+    color: $col;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    outline: 0;
+
+    box-sizing: border-box;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container {
+    max-width: 330px;
+    width: 90%;
+    margin: 1.25rem auto;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+    }
+
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container-flex {
+        flex-direction: row;
+    }
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.content {
+
+    &__product-img {
+        margin-bottom: 1rem;
+    }
+
+    &__heading {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 1.125rem;
+        color: $very-light-gray;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: 1rem;
+        line-height: 145%;
+        margin-bottom: 5rem;
+        color: $transparent-white;
+        font-weight: 400;
+    }
+
+}
+
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+
+    &:active {
+        border: 1px solid $very-light-gray;
+        color: $very-light-gray;
+    }
+
+    &--very-light-gray {
+        background-color: $very-light-gray;
+    }
+}
+
+
+.section-sedans {
+    background-color: $bright-orange;
+    border-radius: 10px 10px 0 0;
+    @extend %section-padding;
+
+    .btn {
+        @include btn-text($bright-orange);
+
+        &:active {
+            color: $very-light-gray;
+            background-color: $bright-orange;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .section-sedans {
+        border-radius: 10px 0 0 10px;
+    }
+    
+}
+
+.section-suvs {
+    background-color: $dark-cyan;
+    @extend %section-padding;
+
+    .btn {
+        @include btn-text($dark-cyan);
+
+        &:active {
+            color: $very-light-gray;
+            background-color: $dark-cyan;
+        }
+    }
+    
+}
+
+
+.section-luxury {
+    background-color: $very-dark-cyan;
+    border-radius: 0 0 10px 10px;
+    @extend %section-padding;
+    
+    .btn {
+        @include btn-text($very-dark-cyan);
+
+        &:active {
+            color: $very-light-gray;
+            background-color: $very-dark-cyan;
+        }
+    }
+
+} 
+
+@media screen and (min-width: 1024px) {
+
+    .section-luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+}
+
+.content {
+    margin: auto;
+    max-width: 210px;
+    width: 100%;
+}
