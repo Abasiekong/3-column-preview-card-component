@@ -14,6 +14,9 @@ body {
   outline: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 main {
   position: absolute;
   top: 50%;
@@ -25,42 +28,37 @@ main {
   max-width: 330px;
   width: 90%;
   margin: 1.25rem auto; }
+  .container--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 @media screen and (min-width: 1024px) {
   .container {
     width: 100%;
     max-width: 1140px;
-    margin: auto; } }
+    margin: auto; }
+    .container--flex {
+      flex-direction: row; } }
 
-.container-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-@media screen and (min-width: 1024px) {
-  .container-flex {
-    flex-direction: row; } }
-
-a {
-  text-decoration: none; }
-
-.content__product-img {
-  margin-bottom: 1rem; }
-
-.content__heading {
-  font-family: 'Big Shoulders Display', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 1.125rem;
-  color: #f2f2f2;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.content__description {
-  font-size: 1rem;
-  line-height: 145%;
-  margin-bottom: 5rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 400; }
+.content {
+  margin: auto;
+  max-width: 14em; }
+  .content__product-img {
+    margin-bottom: 1rem; }
+  .content__heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.125rem;
+    color: #f2f2f2;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .content__description {
+    font-size: 1rem;
+    line-height: 145%;
+    margin-bottom: 5rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400; }
 
 .btn {
   padding: 0.75rem 1.5rem;
@@ -74,7 +72,7 @@ a {
 
 .section-sedans {
   background-color: #e38826;
-  border-radius: 10px 10px 0 0; }
+  border-radius: 0.66667rem 0.66667rem 0 0; }
   .section-sedans .btn {
     color: #e38826; }
     .section-sedans .btn:active {
@@ -83,7 +81,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .section-sedans {
-    border-radius: 10px 0 0 10px; } }
+    border-radius: 0.66667rem 0 0 0.66667rem; } }
 
 .section-suvs {
   background-color: #006970; }
@@ -95,7 +93,7 @@ a {
 
 .section-luxury {
   background-color: #004241;
-  border-radius: 0 0 10px 10px; }
+  border-radius: 0 0 0.66667rem 0.66667rem; }
   .section-luxury .btn {
     color: #004241; }
     .section-luxury .btn:active {
@@ -104,9 +102,4 @@ a {
 
 @media screen and (min-width: 1024px) {
   .section-luxury {
-    border-radius: 0 10px 10px 0; } }
-
-.content {
-  margin: auto;
-  max-width: 210px;
-  width: 100%; }
+    border-radius: 0 0.66667rem 0.66667rem 0; } }

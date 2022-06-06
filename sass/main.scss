@@ -1,9 +1,13 @@
+// Variables
+
 $bright-orange: hsl(31, 77%, 52%);
 $dark-cyan: hsl(184, 100%, 22%);
 $very-dark-cyan: hsl(179, 100%, 13%);
 
 $transparent-white: hsla(0, 0%, 100%, 0.75);
 $very-light-gray: hsl(0, 0%, 95%);
+
+// Mixins and Extend 
 
 %section-padding {
     padding: 4.5rem 2.5rem;    
@@ -26,8 +30,12 @@ html {
 body {
     font-family: 'Lexend Deca', sans-serif;
     outline: 0;
-
+    
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
@@ -42,6 +50,13 @@ main {
     max-width: 330px;
     width: 90%;
     margin: 1.25rem auto;
+
+
+    &--flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -50,31 +65,18 @@ main {
         width: 100%;
         max-width: 1140px;
         margin: auto;
+
+        &--flex {
+            flex-direction: row;
+        }
     }
 
-}
-
-.container-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .container-flex {
-        flex-direction: row;
-    }
-
-}
-
-
-a {
-    text-decoration: none;
 }
 
 .content {
-
+    margin: auto;
+    max-width: 14em;
+    
     &__product-img {
         margin-bottom: 1rem;
     }
@@ -117,7 +119,7 @@ a {
 
 .section-sedans {
     background-color: $bright-orange;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.66667rem 0.66667rem 0 0;
     @extend %section-padding;
 
     .btn {
@@ -133,7 +135,7 @@ a {
 @media screen and (min-width: 1024px) {
 
     .section-sedans {
-        border-radius: 10px 0 0 10px;
+        border-radius: 0.66667rem 0 0 0.66667rem;
     }
     
 }
@@ -153,10 +155,9 @@ a {
     
 }
 
-
 .section-luxury {
     background-color: $very-dark-cyan;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0.66667rem 0.66667rem;
     @extend %section-padding;
     
     .btn {
@@ -173,13 +174,7 @@ a {
 @media screen and (min-width: 1024px) {
 
     .section-luxury {
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 0.66667rem 0.66667rem 0;
     }
 
-}
-
-.content {
-    margin: auto;
-    max-width: 210px;
-    width: 100%;
 }
